@@ -1,0 +1,311 @@
+{
+  "numeric_cols": [
+    "day",
+    "month",
+    "distance",
+    "surge_multiplier",
+    "temperature",
+    "precipIntensity",
+    "precipProbability",
+    "humidity",
+    "windSpeed",
+    "windGust",
+    "visibility",
+    "dewPoint",
+    "pressure",
+    "cloudCover",
+    "uvIndex",
+    "ozone",
+    "precipIntensityMax",
+    "temp_range",
+    "hour_sin",
+    "hour_cos"
+  ],
+  "categorical_cols": [
+    "source",
+    "destination",
+    "cab_type",
+    "name"
+  ],
+  "cols_to_be_scaled": [
+    "day",
+    "month",
+    "distance",
+    "surge_multiplier",
+    "temperature",
+    "precipIntensity",
+    "precipProbability",
+    "humidity",
+    "windSpeed",
+    "windGust",
+    "visibility",
+    "dewPoint",
+    "pressure",
+    "cloudCover",
+    "uvIndex",
+    "ozone",
+    "precipIntensityMax",
+    "temp_range"
+  ],
+  "encoded_cols": [
+    "source_Back Bay",
+    "source_Beacon Hill",
+    "source_Boston University",
+    "source_Fenway",
+    "source_Financial District",
+    "source_Haymarket Square",
+    "source_North End",
+    "source_North Station",
+    "source_Northeastern University",
+    "source_South Station",
+    "source_Theatre District",
+    "source_West End",
+    "destination_Back Bay",
+    "destination_Beacon Hill",
+    "destination_Boston University",
+    "destination_Fenway",
+    "destination_Financial District",
+    "destination_Haymarket Square",
+    "destination_North End",
+    "destination_North Station",
+    "destination_Northeastern University",
+    "destination_South Station",
+    "destination_Theatre District",
+    "destination_West End",
+    "cab_type_Lyft",
+    "cab_type_Uber",
+    "name_Black",
+    "name_Black SUV",
+    "name_Lux",
+    "name_Lux Black",
+    "name_Lux Black XL",
+    "name_Lyft",
+    "name_Lyft XL",
+    "name_Shared",
+    "name_UberPool",
+    "name_UberX",
+    "name_UberXL",
+    "name_WAV"
+  ],
+  "final_cols": [
+    "hour_sin",
+    "hour_cos",
+    "day",
+    "month",
+    "distance",
+    "surge_multiplier",
+    "temperature",
+    "precipIntensity",
+    "precipProbability",
+    "humidity",
+    "windSpeed",
+    "windGust",
+    "visibility",
+    "dewPoint",
+    "pressure",
+    "cloudCover",
+    "uvIndex",
+    "ozone",
+    "precipIntensityMax",
+    "temp_range",
+    "source_Back Bay",
+    "source_Beacon Hill",
+    "source_Boston University",
+    "source_Fenway",
+    "source_Financial District",
+    "source_Haymarket Square",
+    "source_North End",
+    "source_North Station",
+    "source_Northeastern University",
+    "source_South Station",
+    "source_Theatre District",
+    "source_West End",
+    "destination_Back Bay",
+    "destination_Beacon Hill",
+    "destination_Boston University",
+    "destination_Fenway",
+    "destination_Financial District",
+    "destination_Haymarket Square",
+    "destination_North End",
+    "destination_North Station",
+    "destination_Northeastern University",
+    "destination_South Station",
+    "destination_Theatre District",
+    "destination_West End",
+    "cab_type_Lyft",
+    "cab_type_Uber",
+    "name_Black",
+    "name_Black SUV",
+    "name_Lux",
+    "name_Lux Black",
+    "name_Lux Black XL",
+    "name_Lyft",
+    "name_Lyft XL",
+    "name_Shared",
+    "name_UberPool",
+    "name_UberX",
+    "name_UberXL",
+    "name_WAV"
+  ],
+  "raw_input_fields": [
+    "hour",
+    "day",
+    "month",
+    "source",
+    "destination",
+    "cab_type",
+    "name",
+    "distance",
+    "surge_multiplier",
+    "temperature",
+    "precipIntensity",
+    "precipProbability",
+    "humidity",
+    "windSpeed",
+    "windGust",
+    "visibility",
+    "dewPoint",
+    "pressure",
+    "cloudCover",
+    "uvIndex",
+    "ozone",
+    "precipIntensityMax",
+    "temperatureMin",
+    "temperatureMax"
+  ],
+  "metrics": {
+    "train_mape": 8.625677861061492,
+    "val_mape": 8.712549797428212,
+    "test_mape": 8.651736435442192
+  },
+  "category_values": {
+    "source": [
+      "Back Bay",
+      "Beacon Hill",
+      "Boston University",
+      "Fenway",
+      "Financial District",
+      "Haymarket Square",
+      "North End",
+      "North Station",
+      "Northeastern University",
+      "South Station",
+      "Theatre District",
+      "West End"
+    ],
+    "destination": [
+      "Back Bay",
+      "Beacon Hill",
+      "Boston University",
+      "Fenway",
+      "Financial District",
+      "Haymarket Square",
+      "North End",
+      "North Station",
+      "Northeastern University",
+      "South Station",
+      "Theatre District",
+      "West End"
+    ],
+    "cab_type": [
+      "Lyft",
+      "Uber"
+    ],
+    "name": [
+      "Black",
+      "Black SUV",
+      "Lux",
+      "Lux Black",
+      "Lux Black XL",
+      "Lyft",
+      "Lyft XL",
+      "Shared",
+      "UberPool",
+      "UberX",
+      "UberXL",
+      "WAV"
+    ]
+  },
+  "numeric_ranges": {
+    "hour": {
+      "min": 0.0,
+      "max": 23.0
+    },
+    "day": {
+      "min": 1.0,
+      "max": 30.0
+    },
+    "month": {
+      "min": 11.0,
+      "max": 12.0
+    },
+    "distance": {
+      "min": 0.02,
+      "max": 7.86
+    },
+    "surge_multiplier": {
+      "min": 1.0,
+      "max": 3.0
+    },
+    "temperature": {
+      "min": 18.91,
+      "max": 57.22
+    },
+    "precipIntensity": {
+      "min": 0.0,
+      "max": 0.1447
+    },
+    "precipProbability": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "humidity": {
+      "min": 0.38,
+      "max": 0.96
+    },
+    "windSpeed": {
+      "min": 0.45,
+      "max": 15.0
+    },
+    "windGust": {
+      "min": 0.8,
+      "max": 27.25
+    },
+    "visibility": {
+      "min": 0.717,
+      "max": 10.0
+    },
+    "dewPoint": {
+      "min": 4.39,
+      "max": 50.67
+    },
+    "pressure": {
+      "min": 988.09,
+      "max": 1035.55
+    },
+    "cloudCover": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "uvIndex": {
+      "min": 0.0,
+      "max": 2.0
+    },
+    "ozone": {
+      "min": 269.4,
+      "max": 378.9
+    },
+    "precipIntensityMax": {
+      "min": 0.0,
+      "max": 0.1459
+    },
+    "temperatureMin": {
+      "min": 15.63,
+      "max": 43.1
+    },
+    "temperatureMax": {
+      "min": 33.51,
+      "max": 57.87
+    }
+  }
+}
